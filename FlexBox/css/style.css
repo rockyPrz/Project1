@@ -1,0 +1,191 @@
+body {
+	background-color: #F5D76E;
+	color: #fff;
+	font-size: 0.8em;
+}
+
+#landing-message h2 {
+	font: 3em Dosis;
+	color: #000;
+	text-align: center;
+	margin: auto;
+}
+
+nav{
+	margin: 30px auto;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items:stretch;
+	border-radius: 10px;
+	padding: 0;	
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	flex:1;
+	height: 20px;
+	font-family: Dosis;
+	padding:20px 20px 20px 20px;
+	text-align: center;
+	font-size: 2em;
+	border-bottom:1px solid #fff;
+}
+
+nav a:hover {
+	background-color: #4E4D4F;
+	transition: width 2s height 2s background-color 2s;
+}
+
+#logoNav{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.landing {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 10%;
+}
+
+#landing-graphic img{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card {
+	background-color: #E1E1E1;
+	margin: 20px;
+	padding: 10px;
+}
+
+.card h2{
+	font-family: Dosis;
+	font-size: 2em;
+	text-align: center;
+	padding-top: 5%;
+	color:#000;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card p{
+	font-family: Dosis;
+	font-size: 22px;
+	color: #000;
+	text-align: justify;
+	margin-right: 2%;
+	margin-left: 2%;
+	padding: 1%;
+}
+
+.foot-icon {
+	display: flex;
+	flex-direction: column;
+}
+
+.foot-icon img{
+	height: 50%;
+	width: 50%;
+	margin: auto;
+}
+
+.foot-icon img:hover {
+	-webkit-filter:invert(100%);
+}
+
+.multi-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.multi-col p {
+	background-color: #E1E1E1;
+	margin: 20px;
+	padding: 10px;
+
+	-webkit-column-count: 3;
+	-webkit-column-gap: 50px;
+	-webkit-column-rule: 4px dashed #ddd;
+}
+
+@media screen and (min-width: 700px){
+	nav {
+		/*Code goes here*/
+		flex-direction: row;
+		align-items: baseline;
+		height: 30%;
+	}
+	a {
+		/*Code goes here*/
+		border: none;
+		flex: 1;
+		font-size: 2em;
+		justify-content: flex-end;
+	}
+
+	#logoNav{
+		/*Code goes here*/
+		flex: 6;
+		font-size: 3em;
+	}
+
+	.landing {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#landing-message {
+		margin-top: 5%;
+	}
+
+	.card-container {
+		flex-direction: row;
+
+	}
+
+	.card img {
+		width: ;
+	}
+	
+	.foot-icon {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+	}
+
+	.foot-icon img{
+		height: 5%;
+		width: 5%;
+		margin: 10px;
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+	a {
+		font-size: 2em;
+	}
+
+	#logoNav {
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 699px) {
+	#logoNav {
+		font-size: 2em;
+	}
+}
